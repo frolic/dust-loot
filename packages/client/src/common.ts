@@ -1,4 +1,4 @@
-import mudConfig from "contracts/mud.config";
+import mudConfig from "@dust/world/mud.config";
 import { chains } from "./wagmiConfig";
 import { Chain } from "viem";
 
@@ -12,7 +12,9 @@ export type Direction = (typeof mudConfig.enums.Direction)[number];
 
 export function getWorldAddress() {
   if (!worldAddress) {
-    throw new Error("No world address configured. Is the world still deploying?");
+    throw new Error(
+      "No world address configured. Is the world still deploying?"
+    );
   }
   return worldAddress;
 }

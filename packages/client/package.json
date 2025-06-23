@@ -11,9 +11,9 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
+    "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@5d718ab",
     "@latticexyz/common": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
     "@latticexyz/entrykit": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/explorer": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
     "@latticexyz/react": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
     "@latticexyz/schema-type": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
     "@latticexyz/stash": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
@@ -21,7 +21,6 @@
     "@latticexyz/utils": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
     "@latticexyz/world": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
     "@tanstack/react-query": "^5.63.0",
-    "contracts": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "5.0.0",

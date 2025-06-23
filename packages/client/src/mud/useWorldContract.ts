@@ -1,10 +1,16 @@
 import { useClient } from "wagmi";
 import { chainId, getWorldAddress } from "../common";
-import { Account, Chain, Client, GetContractReturnType, Transport, getContract } from "viem";
+import {
+  Account,
+  Chain,
+  Client,
+  GetContractReturnType,
+  Transport,
+  getContract,
+} from "viem";
 import { useQuery } from "@tanstack/react-query";
 import { useSessionClient } from "@latticexyz/entrykit/internal";
-import { observer } from "@latticexyz/explorer/observer";
-import worldAbi from "contracts/out/IWorld.sol/IWorld.abi.json";
+import worldAbi from "@dust/world/out/IWorld.sol/IWorld.abi";
 
 export function useWorldContract():
   | GetContractReturnType<
@@ -30,7 +36,7 @@ export function useWorldContract():
         address: getWorldAddress(),
         client: {
           public: client,
-          wallet: sessionClient.extend(observer()),
+          wallet: sessionClient,
         },
       });
     },
