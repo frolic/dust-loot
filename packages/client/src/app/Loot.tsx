@@ -62,13 +62,13 @@ export function Loot() {
               </div>
             ))}
           </div>
-          <div className="self-start justify-self-center rounded mx-2 -mt-4 text-xs">
+          <div className="self-start justify-self-center -translate-y-1/2">
             {/* TODO: player vs chest vs drop */}
             <button
               type="button"
               className={twMerge(
                 "cursor-pointer",
-                "backdrop-blur py-1 px-2 rounded",
+                "backdrop-blur p-1.5 rounded text-xs leading-none",
                 "bg-slate-950/40 hover:bg-yellow-900/60 active:bg-yellow-950/60",
                 "font-semibold text-yellow-200 disabled:pointer-events-none disabled:text-white/60"
               )}
