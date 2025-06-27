@@ -10,5 +10,8 @@ export type Props = {
 
 export function Synced({ children, fallback }: Props) {
   const status = useSyncStatus();
-  return status.isLive ? children : fallback?.(status);
+  return status.latestBlockNumber > 0n &&
+    status.lastBlockNumberProcessed >= status.latestBlockNumber - 4n
+    ? children
+    : fallback?.(status);
 }
