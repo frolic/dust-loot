@@ -3,3 +3,5 @@ procs:
   client:
     cwd: packages/client
     shell: pnpm run dev
+  tunnel:
+    shell: cloudflared tunnel run

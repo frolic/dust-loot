@@ -1,6 +1,6 @@
 import mudConfig from "@dust/world/mud.config";
 import { chains } from "./wagmiConfig";
-import { Chain } from "viem";
+import { Chain, Hex } from "viem";
 
 export const chainId = import.meta.env.CHAIN_ID;
 export const worldAddress = import.meta.env.WORLD_ADDRESS;
@@ -8,7 +8,11 @@ export const startBlock = BigInt(import.meta.env.START_BLOCK ?? 0n);
 
 export const url = new URL(window.location.href);
 
-export type Direction = (typeof mudConfig.enums.Direction)[number];
+export const tables = {
+  InventorySlot: mudConfig.tables.InventorySlot,
+  EntityPosition: mudConfig.tables.EntityPosition,
+  PlayerBed: mudConfig.tables.PlayerBed,
+} as const;
 
 export function getWorldAddress() {
   if (!worldAddress) {

@@ -5,8 +5,7 @@ import { createSyncAdapter } from "@latticexyz/store-sync/internal";
 import { SyncProvider } from "@latticexyz/store-sync/react";
 import { stash } from "./mud/stash";
 import { wagmiConfig } from "./wagmiConfig";
-import { chainId, getWorldAddress, startBlock } from "./common";
-import mudConfig from "@dust/world/mud.config";
+import { chainId, getWorldAddress, startBlock, tables } from "./common";
 
 const queryClient = new QueryClient();
 
@@ -23,10 +22,7 @@ export function Providers({ children }: Props) {
           chainId={chainId}
           address={worldAddress}
           startBlock={startBlock}
-          tableIds={[
-            mudConfig.tables.InventorySlot.tableId,
-            mudConfig.tables.EntityPosition.tableId,
-          ]}
+          tableIds={Object.values(tables).map((table) => table.tableId)}
           adapter={createSyncAdapter({ stash })}
         >
           {children}
