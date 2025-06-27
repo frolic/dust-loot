@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@5d718ab",
-    "@latticexyz/common": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/react": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/schema-type": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/stash": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/store-sync": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/utils": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
-    "@latticexyz/world": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf",
+    "@latticexyz/common": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
+    "@latticexyz/react": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
+    "@latticexyz/schema-type": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
+    "@latticexyz/stash": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
+    "@latticexyz/store-sync": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
+    "@latticexyz/utils": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
+    "@latticexyz/world": "2.2.22-689708688d9215c3441ffeac029236023d05c25f",
     "@tanstack/react-query": "^5.63.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -37,6 +37,6 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.7",
-    "vite-plugin-mud": "2.2.22-4dbec6d5b3f42baed11909fabacb77399aa7f8cf"
+    "vite-plugin-mud": "2.2.22-689708688d9215c3441ffeac029236023d05c25f"
   }
 }
